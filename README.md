@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates how a reverse shell can be executed via Slack, highlighting potential security vulnerabilities when using chat platforms for command execution. The bot listens for specific messages in a designated Slack channel and executes them as shell commands on the host machine.
+This project demonstrates how a "reverse shell" can be executed via Slack, highlighting potential security vulnerabilities when using chat platforms for command execution. The bot listens for specific messages in a designated Slack channel and executes them as shell commands on the host machine.
 
 This script is intended for cybersecurity research purposes only. It should not be used in production environments or without proper authorization. Misuse of this code could result in severe security risks.
 
@@ -107,10 +107,26 @@ Before running the script, you need to export the following environment variable
 
 It is recommended to use a secrets manager to keep the tokens safe, but for testing purposes they can be exported into the shell:
 
+**Linux:**
 ```bash
 export SLACK_BOT_TOKEN="your-slack-bot-token"
 export SLACK_APP_TOKEN="your-slack-app-token"
 export CHANNEL_ID="your-channel-id"
+```
+
+**Windows:**
+
+#### Using Command Prompt (CMD):
+```cmd
+set SLACK_BOT_TOKEN=your_slack_bot_token
+set SLACK_APP_TOKEN=your_slack_app_token
+set CHANNEL_ID=your-channel-id
+```
+#### Using PowerShell:
+```powershell
+$env:SLACK_BOT_TOKEN="your_slack_bot_token"
+$env:SLACK_APP_TOKEN="your_slack_app_token"
+$env:CHANNEL_ID="your-channel-id"
 ```
 
 ### 5. Run the Script
