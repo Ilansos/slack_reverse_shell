@@ -18,7 +18,7 @@ Prerequisites
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ilansos/slack-reverse-shell.git
+git clone https://github.com/Ilansos/slack_reverse_shell.git
 cd slack-reverse-shell
 ```
 
