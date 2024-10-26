@@ -19,7 +19,7 @@ Prerequisites
 
 ```bash
 git clone https://github.com/Ilansos/slack_reverse_shell.git
-cd slack-reverse-shell
+cd slack_reverse_shell
 ```
 
 ### 2. Install Dependencies
